@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Work+Sans');
+
+body {
+    max-width: 980px;
+    margin: auto;
+}
+
+
+header .logo {
+    font-family: 'Work Sans', sans-serif;
+    text-align: left;
+    margin: 24px 0px;
+    font-weight: bold;
+}
+
+header .menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+header .menu li {
+    list-style-type: none;
+}
+
+header .menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header .menu li a:hover {
+    text-decoration: underline;
+}
+
+
+@media (min-width: 665px) {
+    header nav {
+        display: flex;
+    }
+    
+        header .logo {
+        margin: 24px 10px;
+    }
+    
+    header nav .menu {
+        align-items: center;
+        
+        flex: 1;
+    }
+}
